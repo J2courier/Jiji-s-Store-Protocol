@@ -72,7 +72,7 @@ p{
     height: 70%;
     width: 100%;
 
-    border: solid 1px red;
+    /* border: solid 1px red; */
 
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ p{
 .section3 {
     height: 20%;
     width: 100%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 
@@ -113,7 +113,7 @@ p{
     height: 50%;
     width: 100%;
 
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 .line {
@@ -122,7 +122,7 @@ p{
     box-shadow: 0px 0px 6px 0px white;
 
     position: relative;
-    top: 140%;
+    top: 137%;
     left: 1.5%;
 }
 
@@ -167,7 +167,7 @@ p{
 .welcome-msg {
     color: white;
 
-    border: solid 1px green;
+    /* border: solid 1px green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,8 +180,8 @@ p{
     letter-spacing: -0.1em;
     text-align: justify;
     
-    position: relative;
-    border: solid 1px blue;
+    position: relative; 
+    /* border: solid 1px blue; */
 }
 .welcome-msg strong{
     color: rgb(238, 238, 238);
@@ -194,7 +194,7 @@ p{
 .contain-account {
     height: 20%;
     width: 100%;
-    border: solid 1px white;
+    /* border: solid 1px white; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -208,7 +208,7 @@ p{
     height: 50%;
     width: 10%;
 
-    border: solid 1px yellow;
+    /* border: solid 1px yellow; */
     border-radius: 3px;
 
 }
@@ -224,12 +224,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 1px white;
+    border-radius: 5px;
 }
 .thesis p{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1vw;
+
 }
 
 /*                                                          ABOUT ME                                                                        */
@@ -247,9 +250,9 @@ p{
 
 .contain-items-info {
     height: 100%;
-    width: 95%;
+    width: 90%;
     /* z-index: 1; */
-    border: solid 1px green;
+    /* border: solid 1px green; */
 
     display: flex;
 }
@@ -258,11 +261,11 @@ p{
 .contain-skill-info {
     height: 100%;
     width: 60%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 .contain-aboutme h1 {
-    height: 5%;
+    height: 3%;
     width: 100%;
 
     /* border: solid 1px white; */
@@ -279,7 +282,7 @@ p{
     height: 80%;
     width: 100%;
 
-    border: solid 1px rgb(0, 208, 255);
+    /* border: solid 1px rgb(0, 208, 255); */
 
     display: flex;
     flex-direction: column;
@@ -287,6 +290,7 @@ p{
     align-items: center;
     position: relative;
     top: 2%;
+    gap: 5px;;
 }
 
 .skills h1{
@@ -301,9 +305,9 @@ p{
 
    display: flex;
    flex-direction: column;
-   gap: 10px;
+   gap: 20px;
 
-   border: solid 1px purple;
+   /* border: solid 1px purple; */
 }
 
 .design h1 {
@@ -312,7 +316,7 @@ p{
 }
 
 .design-list {
-    height: 25%;
+    height: 30%;
     /* border: solid 1px white; */
     display: flex;
     justify-content: flex-start;
@@ -322,7 +326,9 @@ p{
 .design-item2 {
     height: 100%;
     width: 30%;
-    border: solid 1px green;
+    border: solid 1px rgb(208, 0, 250);
+    background-color: rgb(145, 0, 185);
+    color: rgb(245, 211, 255);
     border-radius: 25px;
     text-align: center;
 }
@@ -337,10 +343,102 @@ p{
     /* border: solid 1px red; */
 }
 
+.language h1{
+    height: 25%;
+    /* border: solid 1px yellow; */
+}
 
+.lang-list {
+    height: 27%;
+    /* border: solid 1px white; */
+    display: flex;
+    gap: 5%;
+}
+.lang-item1,
+.lang-item2,
+.lang-item3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.lang-item1{
+    width: 15%;
+    border-radius: 15px;
+    background-color: rgba(19, 19, 146, 0.814);
+    border: solid 1px rgb(141, 141, 255);
+    color: rgb(0, 187, 255);
+    font-weight: bold;
+}
+.lang-item2{
+    width: 20%;
+    border-radius: 15px;
+    background-color: rgba(19, 19, 146, 0.814);
+    border: solid 1px rgb(141, 141, 255);
+    color: rgb(0, 187, 255);
+    font-weight: bold;
+}
+.lang-item3{
+    width: 35%;
+    border-radius: 15px;
+    background-color: rgba(19, 19, 146, 0.814);
+    border: solid 1px rgb(141, 141, 255);
+    color: rgb(0, 187, 255);
+    font-weight: bold;
+}
+.lang-item1 p,
+.lang-item2 p,
+.lang-item3 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
+.version-control h1 {
+    height: 25%;
+    /* border: solid 1px blue; */
+}
+.vc-list {
+    height: 27%;
+    /* border: solid 1px white; */
+    display: flex;
+    gap: 5%;
+}
+.version-item1,
+.version-item2,
+.version-item3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.version-item1{
+    width: 20%;
+    border-radius: 15px;
+    background-color: rgb(37, 37, 37);
+    border: solid 1px white;
+    font-weight: bold;
+}
+.version-item2{
+    width: 25%;
+    border-radius: 15px;
+    background-color: rgb(37, 37, 37);
+    border: solid 1px white;
+    color: white;
+    font-weight: bold;
+}
+.version-item3{
+    width: 30%;
+    border-radius: 15px;
+    background-color: rgb(37, 37, 37);
+    border: solid 1px white;
+    font-weight: bold;
+}
+.version-item1 p,
+.version-item2 p,
+.version-item3 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
