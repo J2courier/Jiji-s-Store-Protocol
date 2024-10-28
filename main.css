@@ -116,14 +116,22 @@ p{
     /* border: solid 1px red; */
 }
 
-.line {
-    height: 100%;
+.line,
+.line1 {
+    height: 60%;
     border: solid 1px rgb(255, 255, 255); 
-    box-shadow: 0px 0px 6px 0px white;
+    /* box-shadow: 0px 0px 2px 0px white; */
 
     position: relative;
     top: 137%;
     left: 1.5%;
+}
+
+.line1 {
+    height: 70%;
+    position: relative;
+    top: 207%;
+    /* border: solid 1px blue; */
 }
 
 /*                                                              WELCOME ITEM                                                               */
@@ -226,19 +234,50 @@ p{
     align-items: center;
     border: solid 1px white;
     border-radius: 5px;
+    transform: all 0.3s ease;
 }
 .thesis p{
+    height: 100%;
+    width: 100%;
+    /* border: solid 1px red;1 */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1vw;
+}
 
+.thesis:hover,
+.thesis p:hover {
+    background-color: white;
+    color: black;
 }
 
 /*                                                          ABOUT ME                                                                        */
 .item-aboutme {
     height: 100%;
 }
+
+.skills, 
+.projects {
+    height: 35%;
+    width: 100%;
+
+    /* border: solid 1px rgb(0, 208, 255); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 2%;
+    gap: 5px;;
+}
+
+.skills h1{
+    height: 3%;
+}
+
+
 .contain-aboutme {
     height: 100%;
     width: 100%;
@@ -259,9 +298,11 @@ p{
 
 .contain-item,
 .contain-skill-info {
-    height: 100%;
+    height: 90%;
     width: 60%;
     /* border: solid 1px blue; */
+    position: relative;
+    top: 15px;
 }
 
 .contain-aboutme h1 {
@@ -278,29 +319,11 @@ p{
     /* border: solid 1px white; */
 }
 
-.skills{
-    height: 80%;
-    width: 100%;
-
-    /* border: solid 1px rgb(0, 208, 255); */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    position: relative;
-    top: 2%;
-    gap: 5px;;
-}
-
-.skills h1{
-    height: 3%;
-}
 
 .design,
 .language,
 .version-control {
-   height: 10%;
+   height: 30%;
    width: 100%;
 
    display: flex;
@@ -310,9 +333,16 @@ p{
    /* border: solid 1px purple; */
 }
 
+.design h1,
+.language h1,
+.version-control h1 {
+    color: rgb(176, 176, 176);
+}
+
 .design h1 {
     /* border: solid 1px yellowgreen; */
     height: 30%;
+  
 }
 
 .design-list {
@@ -324,7 +354,7 @@ p{
 }
 .design-item1,
 .design-item2 {
-    height: 100%;
+    height: 85%;
     width: 30%;
     border: solid 1px rgb(208, 0, 250);
     background-color: rgb(145, 0, 185);
@@ -440,9 +470,113 @@ p{
     align-items: center;
 }
 
+.projects {
+    /* border: solid 1px white; */
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.projects h1 {
+    height: 10%;
+    /* border: solid 1px yellow; */
+}
+
+.container-projects {
+    height: 100%;
+    width: 90%;
+    /* border: solid 1px blue; */
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+.project-item1,
+.project-item2,
+.project-item3,
+.project-item4, 
+.project-item5,
+.project-item6 {
+    background-color: rgb(39, 36, 48);
+    
+    border-radius: 5px;
+}
+
+.project-item1 {
+    height: 100%;
+    width: 100%;
+
+    /* border: solid 1px white; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.contain-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 40%;
+    /* border: solid 1px white; */
+}
+
+.contain-img img {
+    height: 80%;
+    width: 80%;
+    /* border: solid 1px white; */
+    border-radius: 5px;
+}
+
+.contain-text {
+    height: 100%;
+    width: 60%;
+    /* border: solid 1px blue; */
+
+    position: relative; 
+    
+}
+
+.contain-text h1,
+.contain-text p:nth-child(2),
+.contain-text p:nth-child(3) {
+    position: relative;
+    top: 15%;
+}
 
 
+.contain-text h1 {
+    /* border: solid 1px yellow; */
+    height: 20%;
+    display: flex;
+    position: relative;
+    font-size: 1.5em
+}
 
+
+.contain-text p:nth-child(3) {
+    display: flex;
+    /* border: solid 1px blue; */
+    color: rgb(140, 140, 140);
+    align-items: center;
+    height: 20%;
+}
+.contain-text p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px rgb(0, 157, 255); */
+    height: 25%;
+    color: rgb(172, 172, 172);
+
+    position: relative;
+    font-size: 1em;
+}
 
 
 
@@ -459,4 +593,12 @@ p{
     .main-content {
         grid-template-columns: 1fr; /* Switch to 1 column on very small screens */
     }
+}
+
+.credits {
+    /* border: solid 1px white; */
+
+    position: relative;
+    top: 10%;
+    color: rgb(169, 169, 169);
 }
