@@ -5,7 +5,7 @@
 
 body{
     color: white;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(0, 0, 0);
     position: relative;
     display: flex;
     align-items: center;
@@ -25,12 +25,12 @@ section{
 a{
   text-decoration: none;
   font-size: 0.8em;
-  color: rgb(107, 107, 107);
+  color: rgb(113, 0, 169);
   z-index: 5;
 }
 
 a:hover{
-  filter: drop-shadow(0px 0px 5px rgb(3, 95, 255));
+  filter: drop-shadow(0px 0px 10px #7100a9);
   color: white;
 }
 
@@ -43,7 +43,7 @@ p{
     height: 100%;
     width: 90%;
 
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 
     position: relative;
 
@@ -57,7 +57,7 @@ p{
 .section1,
 .section2,
 .section3 {
-    border: solid 1px white;
+    /* border: solid 1px white; */
     
 
 }
@@ -65,7 +65,7 @@ p{
 .section1 {
     height: 10%;
     width: 100%;
-    border: solid 1px yellow;
+    /* border: solid 1px yellow; */
 }
 
 .section2 {
@@ -73,9 +73,8 @@ p{
     width: 100%;
 
     /* border: solid 1px red; */
-
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -83,8 +82,60 @@ p{
     height: 20%;
     width: 100%;
     /* border: solid 1px blue; */
+    /* background-color: red; */
 }
 
+/*  ------------------------------------------------------------------side-button                                                           */
+
+.contain-btn-widget {
+    height: 100%;
+    width: 25%;
+    /* border: solid 1px yellow; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    
+}
+
+.contain-btn-widget-items {
+    height: 100%;
+    width: 40%;
+    /* border: solid 1px white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contain-btn-widget-items button {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(251, 251, 251);
+    background-color: rgb(0, 0, 0);
+    border: solid 1px #9800e5;
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contain-btn-widget-items a {
+    height: 8%;
+}
+
+.contain-btn-widget-items button:hover {
+    background-color: #9900e5ae;
+}
+
+
+.contain-btn-widget-items button:active {
+  /* Shadow becomes slightly shorter to show pressed effect */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);  /* Button moves down slightly */
+}
 
 .contain-widget {
     height: 100%;
@@ -92,7 +143,7 @@ p{
     
     display: flex;
     justify-content: center;
-    border: solid 1px white;
+    /* border: solid 1px white; */
     overflow-y: scroll;
     
 }
@@ -119,7 +170,8 @@ p{
 .line,
 .line1 {
     height: 60%;
-    border: solid 1px rgb(255, 255, 255); 
+    border: none;
+    border-left: solid 1px rgb(194, 194, 194); 
     /* box-shadow: 0px 0px 2px 0px white; */
 
     position: relative;
@@ -232,9 +284,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px white;
+    border: solid 1px rgb(113, 0, 169);
     border-radius: 5px;
-    transform: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .thesis p{
     height: 100%;
@@ -244,12 +296,12 @@ p{
     justify-content: center;
     align-items: center;
     font-size: 1vw;
+    color: rgb(237, 237, 237);
 }
 
 .thesis:hover,
 .thesis p:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(113, 0, 169);
 }
 
 /*                                                          ABOUT ME                                                                        */
@@ -315,10 +367,20 @@ p{
 .contain-aboutme p {
     height: 10%;
     width: 100%;
+    color: rgb(177, 177, 177);
     
     /* border: solid 1px white; */
 }
 
+.contain-aboutme span {
+    color: rgb(227, 227, 227);
+    /* border: solid 1px white; */
+    border-radius: 7px;
+}
+
+.contain-aboutme span:hover {
+    border: solid 1px #7100a9;;
+}
 
 .design,
 .language,
@@ -356,11 +418,19 @@ p{
 .design-item2 {
     height: 85%;
     width: 30%;
-    border: solid 1px rgb(208, 0, 250);
-    background-color: rgb(145, 0, 185);
+    border: solid 1px #7100a9;
     color: rgb(245, 211, 255);
     border-radius: 25px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.design-item1:hover,
+.design-item2:hover,
+.design-item1:hover p ,
+.design-item2:hover p {
+    background-color: #7100a9;
+    color: white;
 }
 
 .design-item1 p,
@@ -370,6 +440,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 25px;
     /* border: solid 1px red; */
 }
 
@@ -390,28 +461,23 @@ p{
     height: 100%;
     display: flex;
     align-items: center;
+    border: solid 1px #7100a9;
 }
 .lang-item1{
     width: 15%;
     border-radius: 15px;
-    background-color: rgba(19, 19, 146, 0.814);
-    border: solid 1px rgb(141, 141, 255);
     color: rgb(0, 187, 255);
     font-weight: bold;
 }
 .lang-item2{
     width: 20%;
     border-radius: 15px;
-    background-color: rgba(19, 19, 146, 0.814);
-    border: solid 1px rgb(141, 141, 255);
     color: rgb(0, 187, 255);
     font-weight: bold;
 }
 .lang-item3{
     width: 35%;
     border-radius: 15px;
-    background-color: rgba(19, 19, 146, 0.814);
-    border: solid 1px rgb(141, 141, 255);
     color: rgb(0, 187, 255);
     font-weight: bold;
 }
@@ -421,6 +487,16 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.lang-item1:hover,
+.lang-item2:hover,
+.lang-item3:hover,
+.lang-item1:hover p,
+.lang-item2:hover p,
+.lang-item3:hover p{
+    color: white;
+    background-color: #7100a9;
 }
 
 .version-control h1 {
@@ -439,27 +515,21 @@ p{
     height: 100%;
     display: flex;
     align-items: center;
+    border: solid 1px #7100a9;
 }
 .version-item1{
     width: 20%;
     border-radius: 15px;
-    background-color: rgb(37, 37, 37);
-    border: solid 1px white;
     font-weight: bold;
 }
 .version-item2{
     width: 25%;
     border-radius: 15px;
-    background-color: rgb(37, 37, 37);
-    border: solid 1px white;
-    color: white;
     font-weight: bold;
 }
 .version-item3{
     width: 30%;
     border-radius: 15px;
-    background-color: rgb(37, 37, 37);
-    border: solid 1px white;
     font-weight: bold;
 }
 .version-item1 p,
@@ -468,6 +538,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.version-item1:hover,
+.version-item2:hover,
+.version-item3:hover,
+.version-item1:hover p,
+.version-item2:hover p,
+.version-item3:hover p {
+    background-color: #7100a9;
+    color: white;
 }
 
 .projects {
@@ -496,11 +575,48 @@ p{
 .project-item2,
 .project-item3,
 .project-item4, 
-.project-item5,
-.project-item6 {
-    background-color: rgb(39, 36, 48);
-    
+.project-item5 {
+    background-color: #2f0a42;;
+     border: solid 1px #7100a9;
+    transition: all 0.3s ease;
     border-radius: 5px;
+}
+
+.project-item1:hover,
+.project-item2:hover,
+.project-item3:hover,
+.project-item4:hover, 
+.project-item5:hover,
+.project-item6:hover {
+    background-color: #7100a9;;
+
+}
+
+.project-item1:hover p,
+.project-item2:hover p,
+.project-item3:hover p,
+.project-item4:hover p, 
+.project-item5:hover p,
+.project-item6:hover p,
+.project-item1:hover h1,
+.project-item2:hover h1,
+.project-item3:hover h1,
+.project-item4:hover h1, 
+.project-item5:hover h1,
+.project-item6:hover h1 {
+    transform: translateX(30px);
+}
+
+.project-item1:hover img,
+.project-item2:hover img,
+.project-item3:hover img,
+.project-item4:hover img, 
+.project-item5:hover img,
+.project-item6:hover img {
+    /* transform: translateX(0px); */
+    height: 120%;
+    width: 100%;
+    transform: rotate(30deg);
 }
 
 .project-item1 {
@@ -512,8 +628,10 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: all 0.3s ease;
     position: relative;
+
+    overflow: hidden;
 }
 
 .contain-img {
@@ -531,6 +649,7 @@ p{
     width: 80%;
     /* border: solid 1px white; */
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .contain-text {
@@ -547,6 +666,7 @@ p{
 .contain-text p:nth-child(3) {
     position: relative;
     top: 15%;
+    transition: all 0.3s ease;
 }
 
 
@@ -581,7 +701,6 @@ p{
 
 
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .main-content {
@@ -602,3 +721,5 @@ p{
     top: 10%;
     color: rgb(169, 169, 169);
 }
+
+
